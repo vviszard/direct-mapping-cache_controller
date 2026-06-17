@@ -1,8 +1,6 @@
 # Direct Mapped Cache Controller
 A fully functional direct mapped cache controller implemented in Verilog RTL, simulated using Icarus Verilog and GTKWave.
 
-Built as part of the NPTEL course — Computer Architecture and Organisation by Prof. Indranil Sengupta, IIT Kharagpur.
-
 ---
 
 ## Cache Specifications
