@@ -57,7 +57,7 @@ direct_cache.v          (top level — connects everything)
 [UPDATE] ◄─mem_ready=1─ [FETCH]
     │                      │
     │                 mem_ready=0
-    └──────────────► COMPARE     (loop back)
+    └──────────────► COMPARE
 ```
 
 | State | Active Signals | Description |
@@ -91,8 +91,11 @@ direct_cache.v          (top level — connects everything)
 
 ## Simulation Results
 
-### Waveform
-![Simulation Waveform](reports/waveform.png)
+### Monitor Output
+![Simulation Monitor Output](https://raw.githubusercontent.com/vviszard/direct-mapping-cache_controller/main/reports/direct_cache_output.png)
+
+### GTKWave Waveform
+![GTKWave Waveform](https://raw.githubusercontent.com/vviszard/direct-mapping-cache_controller/main/reports/direct_cache_waveform.png)
 
 ### Test Cases
 
@@ -109,14 +112,14 @@ direct_cache.v          (top level — connects everything)
 ## How to Simulate
 
 ### Requirements
-- [Icarus Verilog](http://iverilog.icarus.com/) 
+- [Icarus Verilog](http://iverilog.icarus.com/)
 - [GTKWave](http://gtkwave.sourceforge.net/)
 
 ### Steps
 
 ```bash
 # Clone the repo
-git clone <your-repo-url>
+git clone https://github.com/vviszard/direct-mapping-cache_controller.git
 cd direct-mapping-cache_controller
 
 # Compile
@@ -142,7 +145,8 @@ direct-mapping-cache_controller/
 ├── testbench/
 │   └── direct_cache_tb.v    — 5 test cases
 ├── reports/
-│   └── waveform.png         — GTKWave simulation output
+│   ├── direct_cache_output.png    — monitor output
+│   └── direct_cache_waveform.png  — GTKWave waveform
 ├── .gitignore
 └── README.md
 ```
@@ -162,7 +166,6 @@ direct-mapping-cache_controller/
 
 ## Roadmap
 
-- [ ] Write testbench for edge cases
 - [ ] 2-way set-associative cache with LRU replacement
 - [ ] N-way parameterised set-associative cache
 - [ ] FPGA implementation on Xilinx board using BRAM
