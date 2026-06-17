@@ -169,7 +169,6 @@ direct-mapping-cache_controller/
 - [ ] 2-way set-associative cache with LRU replacement
 - [ ] N-way parameterised set-associative cache
 - [ ] FPGA implementation on Xilinx board using BRAM
-- [ ] Pipelined processor with cache integration
 
 ---
 
